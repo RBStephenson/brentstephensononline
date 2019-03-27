@@ -1,0 +1,99 @@
+{% load static %}
+
+<nav class="navbar navbar-light bg-light">
+    <div class="navbar navbar-light bg-light">
+        <ul class="nav">
+            <li class="nav-item dropdown">
+                <!--
+                    Build the main navigation menu based on "installed apps"?
+                    Take a look at the following post:
+                    https://stackoverflow.com/questions/9080744/add-links-to-navigation-based-on-installed-apps
+                -->
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                   aria-expanded="false" title="Blogging at its best">Blogs</a>
+                <!--
+                    Build this drop down menu based on the blog categories and make sure that this menu
+                    stays dynamic.
+                -->
+                <div class="dropdown-menu" href="#!">
+                    <a class="dropdown-item" href="#!">Menu Item 0</a>
+                    <a class="dropdown-item" href="#!">Menu Item 1</a>
+                    <a class="dropdown-item" href="#!">Menu Item 2</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                   aria-expanded="false" title="Blogging at its best">Stuff</a>
+                <div class="dropdown-menu" href="#!">
+                    <a class="dropdown-item" href="#!">Menu Item 0</a>
+                    <a class="dropdown-item" href="#!">Menu Item 1</a>
+                    <a class="dropdown-item" href="#!">Menu Item 2</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                   aria-expanded="false" title="Blogging at its best">Reviews</a>
+                <div class="dropdown-menu" href="#!">
+                    <a class="dropdown-item" href="#!">Menu Item 0</a>
+                    <a class="dropdown-item" href="#!">Menu Item 1</a>
+                    <a class="dropdown-item" href="#!">Menu Item 2</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                   aria-expanded="false" title="Blogging at its best">Programming</a>
+                <div class="dropdown-menu" href="#!">
+                    <a class="dropdown-item" href="#!">Menu Item 0</a>
+                    <a class="dropdown-item" href="#!">Menu Item 1</a>
+                    <a class="dropdown-item" href="#!">Menu Item 2</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                   aria-expanded="false" title="Blogging at its best">Artificial Intelligence</a>
+                <div class="dropdown-menu" href="#!">
+                    <a class="dropdown-item" href="#!">Menu Item 0</a>
+                    <a class="dropdown-item" href="#!">Menu Item 1</a>
+                    <a class="dropdown-item" href="#!">Menu Item 2</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                   aria-expanded="false" title="Blogging at its best">About Me</a>
+                <div class="dropdown-menu" href="#!">
+                    <a class="dropdown-item" href="#!">Menu Item 0</a>
+                    <a class="dropdown-item" href="#!">Menu Item 1</a>
+                    <a class="dropdown-item" href="#!">Menu Item 2</a>
+                </div>
+            </li>
+            {% if user.is_authenticated %}
+                <li class="nav-link"><a href="#!">Admin</a></li>
+            {% endif %}
+        </ul>
+    </div>
+    <div class="nav btn-group" role="group" aria-label="Social Media">
+        <button type="button" class="btn btn-md btn-primary"
+                onclick="location.href='#!'"><span
+                class="fab fa-facebook" style="font-size: 24px;"></span></button>
+        <button type="button" class="btn btn-sm btn-primary" onclick="location.href='#!'"><span
+                class="fab fa-github"
+                style="font-size: 24px;"></span>
+        </button>
+        <button type="button" class="btn btn-sm btn-primary" onclick="location.href='#!'"><span
+                class="fab fa-linkedin"
+                style="font-size: 24px;"></span>
+        </button>
+        <button type="button" class="btn btn-sm btn-primary" onclick="location.href='#!'"><span
+                class="fab fa-twitch"
+                style="font-size: 24px;"></span>
+        </button>
+        <button type="button" class="btn btn-sm btn-primary" onclick="location.href='#!'"><span
+                class="fab fa-twitter"
+                style="font-size: 24px;"></span>
+        </button>
+        <button type="button" class="btn btn-sm btn-primary" onclick="location.href='#!'"><span
+                class="fab fa-youtube"
+                style="font-size: 24px;"></span>
+        </button>
+    </div>
+</nav>
