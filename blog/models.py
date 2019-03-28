@@ -2,6 +2,8 @@ from django.conf import settings
 from django.db import models
 from django.utils import timezone
 
+from taggit.managers import TaggableManager
+
 
 class BlogPost(models.Model):
     title = models.CharField(max_length=100)
@@ -11,6 +13,7 @@ class BlogPost(models.Model):
     rec_date = models.DateTimeField(default=timezone.now)
     rec_mod_date = models.DateTimeField(blank=True, null=True)
     publish_date = models.DateTimeField(blank=True, null=True)
+    tags = TaggableManager()  # https://django-taggit.readthedocs.io/en/latest/index.html
 
     def __str__(self):
         return self.title
