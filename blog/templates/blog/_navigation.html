@@ -1,7 +1,11 @@
-{% load static %}
+{% load bootstrap4 %}
 
-<nav class="navbar navbar-light bg-light">
-    <div class="navbar navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavBar"
+            aria-controls="mainNavBar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNavBar">
         <ul class="nav">
             <li class="nav-item dropdown">
                 <!--
@@ -66,36 +70,11 @@
                     <a class="dropdown-item" href="#">Menu Item 2</a>
                 </div>
             </li>
-{#            {% if user.is_authenticated %}#}
-{#                <li class="nav-link"><a href="/admin">Site Administration</a></li>#}
-{#            {% endif %}#}
         </ul>
     </div>
-    <div class="nav btn-group" role="group" aria-label="Social Media">
-        <button type="button" class="btn btn-md btn-primary"
-                onclick="location.href='https://www.facebook.com/brent.stephenson1'"><span
-                class="fab fa-facebook" style="font-size: 24px;"></span></button>
-        <button type="button" class="btn btn-sm btn-primary"
-                onclick="location.href='https://github.com/RBStephenson'"><span
-                class="fab fa-github"
-                style="font-size: 24px;"></span>
-        </button>
-        <button type="button" class="btn btn-sm btn-primary"
-                onclick="location.href='https://www.linkedin.com/in/rbrentstephenson/'"><span
-                class="fab fa-linkedin"
-                style="font-size: 24px;"></span>
-        </button>
-        <button type="button" class="btn btn-sm btn-primary" onclick="location.href='#!'"><span
-                class="fab fa-twitch"
-                style="font-size: 24px;"></span>
-        </button>
-        <button type="button" class="btn btn-sm btn-primary" onclick="location.href='https://twitter.com/RBrentJunior'"><span
-                class="fab fa-twitter"
-                style="font-size: 24px;"></span>
-        </button>
-        <button type="button" class="btn btn-sm btn-primary" onclick="location.href='#!'"><span
-                class="fab fa-youtube"
-                style="font-size: 24px;"></span>
-        </button>
-    </div>
+{#    <form class="form-inline my-2 my-lg-0">#}
+{#        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">#}
+{#        <button class="btn btn-outline-success my-2 my-sm-0">Search</button>#}
+{#    </form>#}
+
 </nav>

@@ -1,0 +1,5 @@
+Django==2.1.7
+django-bootstrap4==0.0.8
+django-material==1.5.2
+django-taggit==1.1.0
+pytz==2018.9
